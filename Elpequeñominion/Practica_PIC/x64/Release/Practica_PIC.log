@@ -1,0 +1,109 @@
+﻿  Practica_PIC.cpp
+Practica_PIC.cpp(6): error C2871: 'cv': no existe ningún espacio de nombres con este nombre
+Practica_PIC.cpp(13): error C2065: 'VideoCapture': identificador no declarado
+Practica_PIC.cpp(13): error C2146: error de sintaxis: falta ';' delante del identificador 'cam'
+Practica_PIC.cpp(13): error C3861: 'cam': no se encontró el identificador
+Practica_PIC.cpp(14): error C2065: 'cam': identificador no declarado
+Practica_PIC.cpp(14): error C2228: el operando izquierdo de '.isOpened' debe tener class/struct/union
+  Practica_PIC.cpp(14): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(15): error C2065: 'cout': identificador no declarado
+Practica_PIC.cpp(15): error C2065: 'endl': identificador no declarado
+Practica_PIC.cpp(18): error C2065: 'Mat': identificador no declarado
+Practica_PIC.cpp(18): error C2146: error de sintaxis: falta ';' delante del identificador 'img'
+Practica_PIC.cpp(18): error C2065: 'img': identificador no declarado
+Practica_PIC.cpp(19): error C2065: 'Mat': identificador no declarado
+Practica_PIC.cpp(19): error C2146: error de sintaxis: falta ';' delante del identificador 'img_threshold'
+Practica_PIC.cpp(19): error C2065: 'img_threshold': identificador no declarado
+Practica_PIC.cpp(20): error C2065: 'Mat': identificador no declarado
+Practica_PIC.cpp(20): error C2146: error de sintaxis: falta ';' delante del identificador 'img_gray'
+Practica_PIC.cpp(20): error C2065: 'img_gray': identificador no declarado
+Practica_PIC.cpp(21): error C2065: 'Mat': identificador no declarado
+Practica_PIC.cpp(21): error C2146: error de sintaxis: falta ';' delante del identificador 'img_roi'
+Practica_PIC.cpp(21): error C2065: 'img_roi': identificador no declarado
+Practica_PIC.cpp(23): error C2065: 'CV_WINDOW_AUTOSIZE': identificador no declarado
+Practica_PIC.cpp(23): error C3861: 'namedWindow': no se encontró el identificador
+Practica_PIC.cpp(24): error C2065: 'CV_WINDOW_AUTOSIZE': identificador no declarado
+Practica_PIC.cpp(24): error C3861: 'namedWindow': no se encontró el identificador
+Practica_PIC.cpp(25): error C2065: 'CV_WINDOW_AUTOSIZE': identificador no declarado
+Practica_PIC.cpp(25): error C3861: 'namedWindow': no se encontró el identificador
+Practica_PIC.cpp(26): error C2065: 'CV_WINDOW_AUTOSIZE': identificador no declarado
+Practica_PIC.cpp(26): error C3861: 'namedWindow': no se encontró el identificador
+Practica_PIC.cpp(30): error C2065: 'cam': identificador no declarado
+Practica_PIC.cpp(30): error C2228: el operando izquierdo de '.read' debe tener class/struct/union
+  Practica_PIC.cpp(30): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(30): error C2065: 'img': identificador no declarado
+Practica_PIC.cpp(32): error C2065: 'cout': identificador no declarado
+Practica_PIC.cpp(32): error C2065: 'endl': identificador no declarado
+Practica_PIC.cpp(35): error C2065: 'Rect': identificador no declarado
+Practica_PIC.cpp(35): error C2146: error de sintaxis: falta ';' delante del identificador 'roi'
+Practica_PIC.cpp(35): error C3861: 'roi': no se encontró el identificador
+Practica_PIC.cpp(36): error C2065: 'img_roi': identificador no declarado
+Practica_PIC.cpp(36): error C2065: 'roi': identificador no declarado
+Practica_PIC.cpp(36): error C3861: 'img': no se encontró el identificador
+Practica_PIC.cpp(37): error C2065: 'img_roi': identificador no declarado
+Practica_PIC.cpp(37): error C2065: 'img_gray': identificador no declarado
+Practica_PIC.cpp(37): error C2065: 'CV_RGB2GRAY': identificador no declarado
+Practica_PIC.cpp(37): error C3861: 'cvtColor': no se encontró el identificador
+Practica_PIC.cpp(39): error C2065: 'img_gray': identificador no declarado
+Practica_PIC.cpp(39): error C3861: 'Size': no se encontró el identificador
+Practica_PIC.cpp(39): error C3861: 'GaussianBlur': no se encontró el identificador
+Practica_PIC.cpp(40): error C2065: 'img_gray': identificador no declarado
+Practica_PIC.cpp(40): error C2065: 'img_threshold': identificador no declarado
+Practica_PIC.cpp(40): error C2065: 'THRESH_BINARY_INV': identificador no declarado
+Practica_PIC.cpp(40): error C2065: 'THRESH_OTSU': identificador no declarado
+Practica_PIC.cpp(40): error C3861: 'threshold': no se encontró el identificador
+Practica_PIC.cpp(42): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(42): error C2065: 'Point': identificador no declarado
+Practica_PIC.cpp(42): error C2059: error de sintaxis: '>'
+Practica_PIC.cpp(43): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(43): error C2065: 'Vec4i': identificador no declarado
+Practica_PIC.cpp(43): error C2065: 'hierarchy': identificador no declarado
+Practica_PIC.cpp(44): error C2065: 'img_threshold': identificador no declarado
+Practica_PIC.cpp(44): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(44): error C2065: 'hierarchy': identificador no declarado
+Practica_PIC.cpp(44): error C2065: 'CV_RETR_EXTERNAL': identificador no declarado
+Practica_PIC.cpp(44): error C2065: 'CV_CHAIN_APPROX_SIMPLE': identificador no declarado
+Practica_PIC.cpp(44): error C3861: 'Point': no se encontró el identificador
+Practica_PIC.cpp(44): error C3861: 'findContours': no se encontró el identificador
+Practica_PIC.cpp(45): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(45): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  Practica_PIC.cpp(45): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(49): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(49): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  Practica_PIC.cpp(49): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(50): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(50): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+Practica_PIC.cpp(51): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(51): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+Practica_PIC.cpp(55): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(55): error C2062: tipo 'int' inesperado
+Practica_PIC.cpp(56): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(56): error C2065: 'Point': identificador no declarado
+Practica_PIC.cpp(56): error C2059: error de sintaxis: '>'
+Practica_PIC.cpp(57): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(57): error C2065: 'Vec4i': identificador no declarado
+Practica_PIC.cpp(57): error C2059: error de sintaxis: '>'
+Practica_PIC.cpp(58): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(58): error C2065: 'Point': identificador no declarado
+Practica_PIC.cpp(58): error C2059: error de sintaxis: '>'
+Practica_PIC.cpp(59): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(59): error C2065: 'Point': identificador no declarado
+Practica_PIC.cpp(59): error C2059: error de sintaxis: '>'
+Practica_PIC.cpp(60): error C2065: 'Point2f': identificador no declarado
+Practica_PIC.cpp(60): error C2146: error de sintaxis: falta ';' delante del identificador 'rect_point'
+Practica_PIC.cpp(60): error C2065: 'rect_point': identificador no declarado
+Practica_PIC.cpp(61): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(61): error C2065: 'RotatedRect': identificador no declarado
+Practica_PIC.cpp(61): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(61): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  Practica_PIC.cpp(61): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(61): error C3861: 'minRect': no se encontró el identificador
+Practica_PIC.cpp(62): error C2065: 'vector': identificador no declarado
+Practica_PIC.cpp(62): error C2065: 'Rect': identificador no declarado
+Practica_PIC.cpp(62): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(62): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  Practica_PIC.cpp(62): note: el tipo es 'unknown-type'
+Practica_PIC.cpp(62): error C3861: 'boundRect': no se encontró el identificador
+Practica_PIC.cpp(63): error C2065: 'contours': identificador no declarado
+Practica_PIC.cpp(63): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+Practica_PIC.cpp(63): fatal error C1003: el recuento de errores supera 100; se detiene la compilación
