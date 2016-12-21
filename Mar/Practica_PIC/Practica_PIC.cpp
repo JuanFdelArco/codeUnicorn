@@ -1,4 +1,4 @@
-// Practica_PIC.cpp: define el punto de entrada de la aplicación de consola.
+// Practica_PIC.cpp: define el punto de entrada de la aplicacion de consola.
 //
 
 #include "stdafx.h"
