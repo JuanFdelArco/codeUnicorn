@@ -1,7 +1,8 @@
+#include "stdafx.h"
 #include "opencv2/imgproc/imgproc.hpp"
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
-#include "stdafx.h"
+
 
 using namespace cv;
 using namespace std;
@@ -10,7 +11,7 @@ int main(int argc, const char** argv)
 {
 
 
-	VideoCapture cam(0);
+	VideoCapture cam;
 	if (!cam.isOpened()) {
 		cout << "ERROR not opened " << endl;
 		return -1;
@@ -38,11 +39,11 @@ int main(int argc, const char** argv)
 
 		GaussianBlur(img_gray, img_gray, Size(19, 19), 0.0, 0);
 		threshold(img_gray, img_threshold, 0, 255, THRESH_BINARY_INV + THRESH_OTSU);
-		
+
 		vector<vector<Point> >contours;
 		vector<Vec4i>hierarchy;
 		findContours(img_threshold, contours, hierarchy, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE, Point());
-		if (contours.size()>0) {
+		if (contours.size() > 0) {
 			size_t indexOfBiggestContour = -1;
 			size_t sizeOfBiggestContour = 0;
 
@@ -60,20 +61,20 @@ int main(int argc, const char** argv)
 			Point2f rect_point[4];
 			vector<RotatedRect>minRect(contours.size());
 			vector<Rect> boundRect(contours.size());
-			for (size_t i = 0; i<contours.size(); i++) {
-				if (contourArea(contours[i])>5000) {
+			for (size_t i = 0; i < contours.size(); i++) {
+				if (contourArea(contours[i]) > 5000) {
 					convexHull(contours[i], hull[i], true);
 					convexityDefects(contours[i], hull[i], defects[i]);
 					if (indexOfBiggestContour == i) {
 						minRect[i] = minAreaRect(contours[i]);
-						for (size_t k = 0; k<hull[i].size(); k++) {
+						for (size_t k = 0; k < hull[i].size(); k++) {
 							int ind = hull[i][k];
 							hullPoint[i].push_back(contours[i][ind]);
 						}
 						count = 0;
 
-						for (size_t k = 0; k<defects[i].size(); k++) {
-							if (defects[i][k][3]>13 * 256) {
+						for (size_t k = 0; k < defects[i].size(); k++) {
+							if (defects[i][k][3] > 13 * 256) {
 								/*   int p_start=defects[i][k][0];   */
 								int p_end = defects[i][k][1];
 								int p_far = defects[i][k][2];
@@ -84,7 +85,7 @@ int main(int argc, const char** argv)
 
 						}
 
-						if (count == 1)
+						/*if (count == 1)
 							strcpy(a, "Hello :D ");
 						else if (count == 2)
 							strcpy(a, "Peace :) ");
@@ -107,7 +108,7 @@ int main(int argc, const char** argv)
 						minRect[i].points(rect_point);
 						for (size_t k = 0; k<4; k++) {
 							line(img_roi, rect_point[k], rect_point[(k + 1) % 4], Scalar(0, 255, 0), 2, 8);
-						}
+						}*/
 
 					}
 				}
