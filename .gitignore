@@ -1,4 +1,4 @@
-*.lastbuildstate
+﻿*.lastbuildstate
 *.tlog
 *.log
 *.ipch
@@ -6,3 +6,9 @@
 *.pdb
 *.tlog
 *.pch
+*.obj
+*.opendb
+*.idb
+*.ilk
+*.suo
+*.db
